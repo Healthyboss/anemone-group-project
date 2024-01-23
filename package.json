@@ -2,14 +2,14 @@
   "name": "anemone-group-project",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://healthyboss.github.io/anemone-group-project",
+  "homepage": "https://Healthyboss.github.io/anemone-group-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url Anemone-Group-Project"
+    "build": "parcel build src/*.html --public-url anemone-group-project"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Healthyboss/Anemone-Group-Project.git"
+    "url": "git+https://github.com/Healthyboss/anemone-group-project.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
