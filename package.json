@@ -5,7 +5,7 @@
   "homepage": "https://Healthyboss.github.io/anemone-group-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url anemone-group-project"
+    "build": "parcel build src/*.html --public-url /anemone-group-project/"
   },
   "repository": {
     "type": "git",
