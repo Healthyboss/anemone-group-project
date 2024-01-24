@@ -139,11 +139,6 @@ ul {
   margin-bottom: 0 0 18px 0;
 }
 
-p,
-h3 {
-  color: var(--white);
-}
-
 .foot-box {
   display: flex;
   flex-direction: row;
@@ -163,20 +158,11 @@ h3 {
   width: 100%;
 }
 
-h3 {
-  margin: 0;
-}
-
 .footer-part3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-}
-
-p {
-  font-size: 16px;
-  margin: 18px 0 12px 0;
 }
 
 address {
