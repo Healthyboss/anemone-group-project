@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anemone</title>
+    <link rel="icon" href="./images/icons.svg#favicon" type="image/svg+xml" />
+    <!-- <link rel="apple-touch-icon" sizes="45x35" href="./images/icons.svg#favicon_mobile" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-touch-icon-72x72.png" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,40 +23,15 @@
   <body>
     <header></header>
     <main>
-      <section><h1 class="main-header">ANEMONE</h1></section>
-      <section><h2 class="section-header">ABOUT</h2></section>
-      <section>
-        <h2 class="section-header"><span>STORE</span><span class="header-line"></span>
-          </h2>
-          <ul class="flex-store">
-            <li class="store">
-              <img src="./images/bouquet.jpg" srcset="" alt="" />
-              <h3 class="card-header"><span>compliments</span><span class="card-line"></span></h3>
-              <p class="card-p">from $15</p>
-            </li>
-            <li class="store">
-              <img src="./images/bouquet.jpg" srcset="" alt="" />
-              <h3 class="card-header"><span>bouquets size S</span><span class="card-line"></span></h3>
-              <p class="card-p">from $25</p>
-            </li>
-            <li class="store">
-              <img src="./images/bouquet.jpg" srcset="" alt="" />
-              <h3 class="card-header"><span>bouquets size M</span><span class="card-line"></span></h3>
-              <p class="card-p">from $45</p>
-            </li>
-            <li class="store">
-              <img src="./images/bouquet.jpg" srcset="" alt="" />
-              <h3 class="card-header"><span>bouquets size L</span><span class="card-line"></span></h3>
-              <p class="card-p">from $60</p>
-            </li>
-          </ul>
-          <button class="btn-order" type="button">Order flowers</button>
-        </div>
-      </section>
-      <section><h2 class="section-header">DELIVERY</h2></section>
-      <section><h2 class="section-header">BLOG</h2></section>
+      <div class="container">
+        <include src="./partials/hero.html"></include>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/store.html"></include>
+        <include src="./partials/delivery.html"></include>
+        <include src="./partials/blog.html"></include>
+      </div>
     </main>
-    <footer></footer>
+    <include src="./partials/footer.html"></include>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
