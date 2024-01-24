@@ -176,7 +176,7 @@ h3 {
 
 p {
   font-size: 16px;
-  margin: 18px 0 12px 0;
+  /* margin: 18px 0 12px 0; */
 }
 
 address {
@@ -199,6 +199,146 @@ address {
   fill: var(--white);
   vertical-align: top;
   margin-bottom: 18px;
+}
+
+.btn-order-flowers {
+  position: relative;
+  display: block;
+  min-width: 208px;
+  height: 64px;
+  border: none;
+  padding: 16px 32px;
+
+  border-radius: 38px;
+  background: var(--pink, #e86f54);
+
+  cursor: pointer;
+  align-self: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-top: 48px;
+}
+
+.btn-order-flowers:hover {
+  background: var(--pink, #e86f54);
+  color: var(--white);
+}
+
+.btn-order-flowers:focus {
+  background: var(--pink, #e86f54);
+}
+
+.description-modal-header {
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-submit-modal {
+  display: block;
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--pink);
+  width: 100%;
+
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  padding: 10px 0;
+  margin-top: 24px;
+
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-modal-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.description-modal-window {
+  color: var(--carbon);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 18px;
+}
+
+.btn-submit-modal:hover,
+.btn-submit-modal:focus {
+  background: rgba(232, 111, 84, 0.4);
+  color: var(--white);
+}
+
+.modal {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 272px;
+  height: 357px;
+  padding: 28px 16px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.input-field-container {
+  position: relative;
+}
+
+.fieldname-modal {
+  font-family: 'Montserrat' sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+
+.input-textfield-modal {
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--iron);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /* ===== TABLET ===== */
