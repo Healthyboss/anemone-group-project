@@ -139,7 +139,7 @@ ul {
   gap: 25px;
 }
 .blog-icon-left {
-  transform: rotate(-90deg);
+  transform: rotate(-120deg);
 }
 .blog-icon-right {
   transform: rotate(90deg);
