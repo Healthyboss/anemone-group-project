@@ -37,6 +37,7 @@ ol {
   --night: #060606;
   --black: #000000;
   --white: #ffffff;
+  --black-6: #00000099;
 }
 
 @font-face {
@@ -115,7 +116,7 @@ body {
 /* STORE - Monia POCZĄTEK */
 .header-line {
   flex-grow: 1;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid var(--black);
 }
 .flex-about {
   display: flex;
@@ -157,14 +158,14 @@ body {
   font-size: 16px;
   line-height: 19.5px;
   padding: 8px 0;
-  color: black;
+  color: var(--black);
 }
 .card-p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 14.25px;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--black-6);
   padding-bottom: 8px;
 }
 
@@ -176,7 +177,7 @@ body {
   background-color: var(--pink);
   border: none;
   border-radius: 38px;
-  color: white;
+  color: var(--white);
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -192,76 +193,6 @@ body {
   background-color: var(--pink-focus);
 }
 
-@media (min-width: 768px) {
-  .section-header {
-    font-size: 44px;
-  }
-  .flex-about {
-    flex-direction: row;
-    padding-top: 30px;
-    gap: 30px;
-  }
-  .item-about {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-  .p-about {
-    font-size: 20px;
-    line-height: 24.38px;
-  }
-  .flex-store {
-    width: calc((344px * 2) + 32px);
-    gap: 32px;
-    padding: 60px 0;
-  }
-  .card-header {
-    font-size: 32px;
-    line-height: 39.01px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .card-line {
-    flex-grow: 1;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-  }
-  .card-p {
-    font-size: 24px;
-    line-height: 29.26px;
-  }
-  .store {
-    flex-basis: calc((100% - 32px) / 2);
-  }
-  .btn-order {
-    min-width: 280px;
-    height: 64px;
-    font-size: 28px;
-  }
-  .section {
-    margin: 0 24px 100px 24px;
-  }
-}
-@media (min-width: 1280px) {
-  .flex-about {
-    gap: 66px;
-    }
-  .p-about {
-    font-size: 22px;
-    line-height: 26.82px;
-  }
-  .flex-store {
-    width: calc((600px * 2) + 32px);
-    padding: 80px 0;
-  }
-  .card-header {
-    font-size: 36px;
-    line-height: 43.88px;
-  }
-  .card-p {
-    font-size: 28px;
-    line-height: 34.13px;
-  }
-}
 /* STORE - Monia KONIEC */
 
 ul {
@@ -350,7 +281,63 @@ address {
     max-width: 768px;
     margin: auto;
   }
+  .section {
+    margin: 0 24px 100px 24px;
+  }
 
+  .section-header {
+    font-size: 44px;
+  }
+
+  .flex-about {
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 30px;
+  }
+
+  .item-about {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .p-about {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .flex-store {
+    width: calc((344px * 2) + 32px);
+    gap: 32px;
+    padding: 60px 0;
+  }
+
+  .card-header {
+    font-size: 32px;
+    line-height: 39.01px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-line {
+    flex-grow: 1;
+    border-bottom: 1px solid var(--black);
+  }
+
+  .card-p {
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+
+  .store {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .btn-order {
+    min-width: 280px;
+    height: 64px;
+    font-size: 28px;
+  }
   .footer {
     height: 298px;
     font-size: 16px;
@@ -392,6 +379,30 @@ address {
     width: 100%;
     max-width: 1280px;
     margin: auto;
+  }
+
+  .flex-about {
+    gap: 66px;
+  }
+
+  .p-about {
+    font-size: 22px;
+    line-height: 26.82px;
+  }
+
+  .flex-store {
+    width: calc((600px * 2) + 32px);
+    padding: 80px 0;
+  }
+
+  .card-header {
+    font-size: 36px;
+    line-height: 43.88px;
+  }
+
+  .card-p {
+    font-size: 28px;
+    line-height: 34.13px;
   }
 
   .footer {
