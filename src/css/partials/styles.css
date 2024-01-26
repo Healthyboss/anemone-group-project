@@ -255,12 +255,19 @@ body {
     position: relative;
 }
 
-.hero-shop-now {
-    /* position: relative; */
+.hero-shop-now-mobile {
     width: 64px;
     height: 76px;
     background-color: transparent;
     margin-left: 11px;
+}
+
+.hero-shop-now-tablet {
+    display: none;
+}
+
+.hero-shop-now-desktop {
+    display: none;
 }
 
 .hero-svg {
@@ -289,21 +296,29 @@ body {
 }
 
 @media (min-width: 768px) {
+    .hero {
+        margin-bottom: 150px;
+    }
     .flower-studio {
         width: 76px;
         height: 58px;
         font-size: 24px;
         font-weight: 400;
-        padding-right: 116px;
+        margin-right: 49px;
     }
     .hero-flower {
         width: 390px;
         height: 636px;
     }
-    .icon-arrow {
+    .hero-shop-now-mobile {
+        display: none;
+    }
+    .hero-shop-now-tablet {
+        display: block;
         width: 145px;
         height: 150px;
-        /* padding-right: 72px; */
+        background-color: transparent;
+        margin-left: 20px;
     }
     .anemone-logo>p {
         width: 658px;
@@ -311,9 +326,15 @@ body {
         font-weight: 400;
         font-size: 120px;
     }
+    .anemone-logo {
+        top: 91%;
+    }
 }
 
 @media (min-width: 1280px) {
+    .hero {
+        margin-bottom: 200px;
+    }
     .flower-studio {
         width: 101px;
         height: 78px;
@@ -325,15 +346,24 @@ body {
         width: 390px;
         height: 636px;
     }
-    .icon-arrow {
+    .hero-shop-now-tablet {
+        display: none;
+    }
+    .hero-shop-now-desktop {
+        display: block;
         width: 166px;
         height: 166px;
+        background-color: transparent;
+        margin-left: 110px;
     }
     .anemone-logo>p {
         width: 877px;
         height: 195px;
         font-weight: 400;
         font-size: 160px;
+    }
+    .anemone-logo {
+        top: 85%;
     }
 }
 
