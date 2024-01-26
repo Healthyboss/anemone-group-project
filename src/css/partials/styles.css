@@ -123,6 +123,216 @@ body {
     gap: 16px;
 }
 
+/* HEADER- Anna */
+.header{
+    background: var(--white-background);
+}
+.container{
+    width: 100%;
+    max-width: 320px; 
+    padding: 0 15px; 
+    margin: 0 auto; 
+}
+.header-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .header-nav{
+   display: flex;
+   align-items: center;
+   height: 35px;
+}
+.logo{   
+    display: flex;
+    background-color: transparent;
+    border: none;
+ }
+ .icon{
+    fill: #0E0E0E;
+ }
+ .tel-icon{
+    padding: 2px 14px 11px 183px;
+    display: flex;
+ }
+ .header-list{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0; 
+ }
+ .list{
+    list-style: none;
+ }
+ .header-list-nav{
+    color: white;
+    padding: 24px 0;
+ }
+ .link{
+    text-decoration: none;
+ }
+ .tablet-icon-div{
+    margin-left: auto;
+ }
+ .address-main{
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    margin: 0;
+ }
+ .address-list{
+    color: var(--text-color);
+ }
+ .header-flex{
+    display: none;
+ }
+ .mobile-menu-layout{
+    display: flex;
+    padding: 16px 16px 0 16px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+ }
+ .mobile-menu-layout button{
+    background-color: transparent;
+    border: none;
+    padding: 0 0 11px 0;
+ }
+ .mobile-header-nav .header-list{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 26px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+ }
+ .mobile-header-nav .header-list-nav{ 
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+ }
+ .js-menu-container{
+    display: none;
+ }
+ .js-menu-container.is-open{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-flow: column nowrap;
+    padding: 124px 110px 180px 110px;
+    width: 100%;
+    height: 100%;
+    background-color: #E86F54;
+    z-index: 1;
+ }
+ .mobile-menu-close{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+ }
+.button-modal-box{
+    position: absolute;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border: none;
+    padding: 0;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== TABLET- HEADER ===== */
+@media screen and (min-width: 768px) {
+   .mobile-menu-layout{
+      display: none;
+   }
+   .container{
+       max-width: 768px; 
+    }
+    .header-list{
+      padding: 16px 0 17px 0;
+      margin: 0;
+   }
+    .header-flex{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .header-list-nav{ 
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .header-nav{
+      height: 57px;
+    }
+    .tel-icon{
+      padding: 16px 0 17px 75px;
+    }
+    .address{
+      margin-left: 0;
+   }
+   
+   .logo-div{
+      margin-right: 80px;
+   }
+   .desktop-icon-div{
+      display: none;
+   }
+   .tablet-icon-div{
+      display: block;
+   }
+   .header-div{
+      padding: 24px 9px 0 9px;
+   }
+    }
+     
+      /* ===== DESKTOP- HEADER ===== */
+ @media screen and (min-width: 1280px) {
+   .container {
+    max-width: 1280px;
+   }
+   .tablet-icon-div{
+      display: none;
+   }
+   .tel-icon{
+      padding: 12px 0 17px 306px;
+   }
+   .tablet-icon-div{
+      display: none;
+   } 
+   .logo-div{
+      margin-right: 261px;
+        }
+   .desktop-icon-div{
+      display: block;
+   }
+   .header-list{
+      gap: 48px;
+      padding: 12px 0 21px 0;
+   }
+   .header-nav{
+      height: 57px;
+      max-width: 1232px;
+   }
+   .header-div{
+      padding: 28px 9px 0 9px;
+   }
+}
 
 /* STORE - Monia POCZĄTEK */
 
