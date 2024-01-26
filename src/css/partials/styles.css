@@ -123,6 +123,7 @@ body {
   flex-grow: 1;
   border-bottom: 1px solid var(--black-6);
 }
+
 .flex-about {
   display: flex;
   flex-direction: column;
@@ -137,17 +138,13 @@ body {
 .header {
   background: var(--white-background);
 }
+
 .container {
+  max-width: 480px;
   width: 100%;
-  /* max-width: 320px;  */
   padding: 0 15px;
   margin: 0 auto;
 }
-/* .header-flex{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
- } */
 .header-nav {
   display: flex;
   align-items: center;
@@ -163,7 +160,6 @@ body {
   fill: #0e0e0e;
 }
 .tel-icon {
-  /* padding: 2px 14px 11px 183px; */
   display: flex;
 }
 .header-list {
@@ -176,7 +172,6 @@ body {
   align-items: center;
   padding: 0;
   justify-content: space-between;
-  /* width: 100%; */
 }
 .list {
   list-style: none;
@@ -185,12 +180,7 @@ body {
   color: white;
   padding: 24px 0;
 }
-.link {
-  text-decoration: none;
-}
-/* .tablet-icon-div{
-    margin-left: auto;
- } */
+
 .address-main {
   display: flex;
   gap: 40px;
@@ -204,11 +194,8 @@ body {
   display: none;
 }
 .mobile-menu-layout {
-  /* display: flex; */
   padding: 16px 16px 0 16px;
   margin: auto;
-  /* justify-content: center;
-    align-items: center; */
 }
 .mobile-nav {
   display: flex;
@@ -272,21 +259,6 @@ body {
 
 /* STORE - Monia POCZĄTEK */
 
-.header-line {
-  flex-grow: 1;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
-}
-
-.flex-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin: 0 auto;
-  padding-top: 32px;
-}
-
 .p-about {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -301,7 +273,6 @@ body {
   align-items: center;
   gap: 16px;
   padding: 32px 0;
-  width: calc((136px * 2) + 16px);
   margin: 0 auto;
 }
 
@@ -396,7 +367,6 @@ body {
 
 svg {
   fill: currentColor;
-  /* transform-origin: center; */
 }
 
 .anemone-logo {
@@ -417,15 +387,145 @@ svg {
   font-size: 52px;
 }
 
+.blog-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 0 24px;
+  margin-top: 32px;
+}
+.blog-photo {
+  width: 136px;
+  height: 181px;
+}
+.hidden-photo {
+  display: none;
+}
+.blog-arrow-icons {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+.blog-icon-arrow-container {
+  width: 50px;
+  height: 50px;
+}
+.blog-icon-arrow {
+  width: 100%;
+  height: 100%;
+}
+.blog-p-follow {
+  margin-top: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22em;
+  text-align: center;
+  color: var(--black);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 389px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--footer-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 32px 16px;
+}
+
+.footer-header {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 18px 0;
+}
+
+.foot-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-part1 {
+  display: none;
+}
+
+.footer-part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-ot {
+  margin: 0 0 6px 0;
+}
+
+.footer-part3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-nav-item,
+.footer-tel {
+  padding: 0 0 12px 0;
+}
+
+.footer-mail {
+  padding: 0 0 12px 0;
+  width: 147px;
+  display: flex;
+  flex-direction: column;
+}
+
+address {
+  font-family: var(--footer-font);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 147px;
+  height: 2em;
+}
+
+.footer-sm {
+  margin: 0 0 0 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.footer-icon {
+  fill: var(--white);
+  vertical-align: top;
+  margin-bottom: 18px;
+}
+
+.footer-sm-fb {
+  margin: 0 0 0 14px;
+}
+
 /* ===== TABLET ===== */
 
 @media (min-width: 768px) {
   .mobile-menu-layout {
     display: none;
   }
-  /* .container{
-       max-width: 768px; 
-    } */
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+
   .header-list {
     padding: 16px 0 17px 0;
     margin: 0;
@@ -433,8 +533,6 @@ svg {
   }
   .header-flex {
     display: block;
-    /* justify-content: center;
-       align-items: center; */
   }
   .header-list-nav {
     color: #000;
@@ -445,9 +543,6 @@ svg {
   }
   .header-nav {
     height: 57px;
-  }
-  .tel-icon {
-    /* padding: 16px 0 17px 75px; */
   }
   .address {
     margin-left: 0;
@@ -465,11 +560,6 @@ svg {
   }
   .header-div {
     padding: 24px 9px 0 9px;
-  }
-  .container {
-    width: 100%;
-    /* max-width: 768px; */
-    margin: auto;
   }
   .section {
     margin: 0 24px 100px 24px;
@@ -495,7 +585,6 @@ svg {
   }
 
   .flex-store {
-    width: calc((344px * 2) + 32px);
     gap: 32px;
     padding: 60px 0;
   }
@@ -548,14 +637,10 @@ svg {
     font-size: 36px;
   }
   .footer {
-    height: 298px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1;
-    padding: 60px 0 0 0;
-  }
-  .foot-box {
-    height: 100%;
+    padding: 60px 16px;
   }
   .footer-header {
     font-size: 20px;
@@ -568,7 +653,6 @@ svg {
   }
   .footer-part3 {
     width: calc((100% - 24px) / 2);
-    margin: 0 0 0 44px;
   }
   .footer-mail {
     display: flex;
@@ -597,7 +681,6 @@ svg {
   .icon-arrow {
     width: 145px;
     height: 150px;
-    /* padding-right: 72px; */
   }
   .anemone-logo > p {
     width: 658px;
@@ -648,7 +731,6 @@ svg {
   }
 
   .flex-store {
-    width: calc((600px * 2) + 32px);
     padding: 80px 0;
   }
 
@@ -679,8 +761,7 @@ svg {
     margin-top: 24px;
   }
   .footer {
-    height: 298px;
-    padding: 72px 0 0 0;
+    padding: 72px 24px;
   }
   .foot-box {
     display: flex;
@@ -694,7 +775,8 @@ svg {
   }
   .footer-part3 {
     width: calc((100% - 354px) / 2);
-    padding: 0 0 0 96px;
+    padding: 0 0 0 90px;
+    margin: 0 0 0 44px;
   }
   .footer-logo {
     fill: #ffffff;
@@ -724,140 +806,3 @@ svg {
 }
 
 /* HERO - Sylwia END  */
-
-.container {
-  /* max-width: 320px; */
-  margin: 0 auto;
-}
-.blog-photos {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  padding: 0 24px;
-  margin-top: 32px;
-}
-.blog-photo {
-  width: 136px;
-  height: 181px;
-}
-.hidden-photo {
-  display: none;
-}
-.blog-arrow-icons {
-  margin-top: 4px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 25px;
-}
-.blog-icon-arrow-container {
-  width: 50px;
-  height: 50px;
-}
-.blog-icon-arrow {
-  width: 100%;
-  height: 100%;
-}
-.blog-p-follow {
-  margin-top: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22em;
-  text-align: center;
-  color: var(--black);
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  height: 389px;
-  background-color: var(--black);
-  color: var(--white);
-  font-family: var(--footer-font);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  padding: 32px 0 0 0;
-}
-
-.footer-header {
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 0 0 18px 0;
-}
-
-.foot-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.footer-part1 {
-  display: none;
-}
-
-.footer-header {
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0 0 18px 0;
-}
-
-.footer-part2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.footer-ot {
-  margin: 0 0 6px 0;
-}
-
-.footer-part3 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.footer-nav-item,
-.footer-tel {
-  padding: 0 0 12px 0;
-}
-
-.footer-mail {
-  padding: 0 0 12px 0;
-  width: 147px;
-  display: flex;
-  flex-direction: column;
-}
-
-address {
-  font-family: var(--footer-font);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  width: 147px;
-  height: 2em;
-}
-
-.footer-sm {
-  margin: 0 0 0 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.footer-icon {
-  fill: var(--white);
-  vertical-align: top;
-  margin-bottom: 18px;
-}
-
-.footer-sm-fb {
-  margin: 0 0 0 14px;
-}
