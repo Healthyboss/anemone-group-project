@@ -29,7 +29,7 @@ ul,
 ol {
   list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 :root {
@@ -123,6 +123,7 @@ body {
   flex-grow: 1;
   border-bottom: 1px solid var(--black-6);
 }
+
 .flex-about {
   display: flex;
   flex-direction: column;
@@ -131,24 +132,132 @@ body {
   gap: 16px;
   margin: 0 auto;
   padding-top: 32px;
+}
+
+/* HEADER- Anna */
+.header {
+  background: var(--white-background);
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  background-color: transparent;
+  border: none;
+}
+.icon {
+  fill: #0e0e0e;
+}
+.tel-icon {
+  display: flex;
+}
+.header-list {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+.list {
+  list-style: none;
+}
+.header-list-nav {
+  color: white;
+  padding: 24px 0;
+}
+
+.address-main {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  margin: 0;
+}
+.address-list {
+  color: var(--text-color);
+}
+.header-flex {
+  display: none;
+}
+.mobile-menu-layout {
+  padding: 16px 16px 0 16px;
+  margin: auto;
+}
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu-layout button {
+  background-color: transparent;
+  border: none;
+  margin-left: 20px;
+}
+.mobile-header-nav .header-list {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 26px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.mobile-header-nav .header-list-nav {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.js-menu-container {
+  display: none;
+}
+.js-menu-container.is-open {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-flow: column nowrap;
+  padding: 124px 110px 180px 110px;
+  width: 100%;
+  height: 100%;
+  background-color: #e86f54;
+  z-index: 1;
+}
+.mobile-menu-close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.button-modal-box {
+  position: absolute;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* STORE - Monia POCZĄTEK */
-
-.header-line {
-  flex-grow: 1;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
-}
-
-.flex-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin: 0 auto;
-  padding-top: 32px;
-}
 
 .p-about {
   font-family: 'Montserrat', sans-serif;
@@ -164,7 +273,6 @@ body {
   align-items: center;
   gap: 16px;
   padding: 32px 0;
-  width: calc((136px * 2) + 16px);
   margin: 0 auto;
 }
 
@@ -257,18 +365,9 @@ body {
   width: 28px;
 }
 
-/* svg { */
-/* fill: currentColor; */
-/* height: auto; */
-/* max-width: 66vmin; */
-/* transform-origin: center; */
-/* width: 66%; */
-/* } */
-
-/* p { */
-/* margin-top: 0; */
-/* margin-bottom: 22px; */
-/* } */
+svg {
+  fill: currentColor;
+}
 
 .anemone-logo {
   display: flex;
@@ -288,66 +387,6 @@ body {
   font-size: 52px;
 }
 
-@media (min-width: 768px) {
-  .flower-studio {
-    width: 76px;
-    height: 58px;
-    font-size: 24px;
-    font-weight: 400;
-    padding-right: 116px;
-  }
-  .hero-flower {
-    width: 390px;
-    height: 636px;
-  }
-  .icon-arrow {
-    width: 145px;
-    height: 150px;
-    /* padding-right: 72px; */
-  }
-  .anemone-logo > p {
-    width: 658px;
-    height: 146px;
-    font-weight: 400;
-    font-size: 120px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .flower-studio {
-    width: 101px;
-    height: 78px;
-    font-size: 32px;
-    font-weight: 400;
-    padding-right: 210px;
-  }
-  .hero-flower {
-    width: 390px;
-    height: 636px;
-  }
-  .icon-arrow {
-    width: 166px;
-    height: 166px;
-  }
-  .anemone-logo > p {
-    width: 877px;
-    height: 195px;
-    font-weight: 400;
-    font-size: 160px;
-  }
-}
-
-/* HERO - Sylwia END  */
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-}
 .blog-photos {
   display: flex;
   flex-direction: row;
@@ -397,15 +436,15 @@ ul {
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
-  padding: 32px 0 0 0;
+  padding: 32px 16px;
 }
 
 .footer-header {
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 0 0 18px 0;
+  margin: 0 0 18px 0;
 }
 
 .foot-box {
@@ -418,12 +457,6 @@ ul {
 
 .footer-part1 {
   display: none;
-}
-
-.footer-header {
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0 0 18px 0;
 }
 
 .footer-part2 {
@@ -441,6 +474,7 @@ ul {
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: space-between;
 }
 
 .footer-nav-item,
@@ -483,11 +517,49 @@ address {
 
 /* ===== TABLET ===== */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  .mobile-menu-layout {
+    display: none;
+  }
   .container {
-    width: 100%;
     max-width: 768px;
-    margin: auto;
+    width: 100%;
+  }
+
+  .header-list {
+    padding: 16px 0 17px 0;
+    margin: 0;
+    gap: 24px;
+  }
+  .header-flex {
+    display: block;
+  }
+  .header-list-nav {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header-nav {
+    height: 57px;
+  }
+  .address {
+    margin-left: 0;
+  }
+
+  .logo-div {
+    margin-right: 70px;
+  }
+  .desktop-icon-div {
+    display: none;
+  }
+  .tablet-icon-div {
+    display: block;
+    margin-left: 70px;
+  }
+  .header-div {
+    padding: 24px 9px 0 9px;
   }
   .section {
     margin: 0 24px 100px 24px;
@@ -513,7 +585,6 @@ address {
   }
 
   .flex-store {
-    width: calc((344px * 2) + 32px);
     gap: 32px;
     padding: 60px 0;
   }
@@ -566,14 +637,10 @@ address {
     font-size: 36px;
   }
   .footer {
-    height: 298px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1;
-    padding: 60px 0 0 0;
-  }
-  .foot-box {
-    height: 100%;
+    padding: 60px 16px;
   }
   .footer-header {
     font-size: 20px;
@@ -586,7 +653,6 @@ address {
   }
   .footer-part3 {
     width: calc((100% - 24px) / 2);
-    margin: 0 0 0 44px;
   }
   .footer-mail {
     display: flex;
@@ -601,15 +667,54 @@ address {
   .footer-sm-fb {
     margin: 0 0 0 0;
   }
+  .flower-studio {
+    width: 76px;
+    height: 58px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-right: 116px;
+  }
+  .hero-flower {
+    width: 390px;
+    height: 636px;
+  }
+  .icon-arrow {
+    width: 145px;
+    height: 150px;
+  }
+  .anemone-logo > p {
+    width: 658px;
+    height: 146px;
+    font-weight: 400;
+    font-size: 120px;
+  }
 }
+
 /* ===== DESKTOP ===== */
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .container {
     width: 100%;
     max-width: 1280px;
     margin: auto;
   }
+  .tablet-icon-div {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-list {
+    padding: 12px 0 21px 0;
+    gap: 48px;
+  }
+  .header-nav {
+    height: 57px;
+    max-width: 1232px;
+  }
+  .header-div {
+    padding: 28px 9px 0 9px;
+  }
+
   .flex-about {
     gap: 90px;
     justify-content: space-between;
@@ -626,7 +731,6 @@ address {
   }
 
   .flex-store {
-    width: calc((600px * 2) + 32px);
     padding: 80px 0;
   }
 
@@ -657,8 +761,7 @@ address {
     margin-top: 24px;
   }
   .footer {
-    height: 298px;
-    padding: 72px 0 0 0;
+    padding: 72px 24px;
   }
   .foot-box {
     display: flex;
@@ -672,10 +775,34 @@ address {
   }
   .footer-part3 {
     width: calc((100% - 354px) / 2);
-    padding: 0 0 0 96px;
+    padding: 0 0 0 90px;
+    margin: 0 0 0 44px;
   }
   .footer-logo {
     fill: #ffffff;
     margin: 0 210px 0 24px;
   }
+  .flower-studio {
+    width: 101px;
+    height: 78px;
+    font-size: 32px;
+    font-weight: 400;
+    padding-right: 210px;
+  }
+  .hero-flower {
+    width: 390px;
+    height: 636px;
+  }
+  .icon-arrow {
+    width: 166px;
+    height: 166px;
+  }
+  .anemone-logo > p {
+    width: 877px;
+    height: 195px;
+    font-weight: 400;
+    font-size: 160px;
+  }
 }
+
+/* HERO - Sylwia END  */
