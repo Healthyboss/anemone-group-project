@@ -126,10 +126,8 @@ body {
   gap: 16px;
   margin: 0 auto;
   padding-top: 32px;
-
 }
 .p-about {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.5px;
