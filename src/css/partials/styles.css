@@ -1,126 +1,130 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
-    cursor: pointer;
-    border: none;
+  cursor: pointer;
+  border: none;
 }
 
 ul,
 ol {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 :root {
-    --pink: #e86f54;
-    --pink-hover: #e25b41;
-    --pink-focus: #fa6f54;
-    --mint: #3cbc81;
-    --carmine: #e74a3b;
-    --onyx: #111111;
-    --carbon: #5c5c5c;
-    --iron: #d7d7d7;
-    --night: #060606;
-    --black: #000000;
-    --white: #ffffff;
+  --pink: #e86f54;
+  --pink-hover: #e25b41;
+  --pink-focus: #fa6f54;
+  --mint: #3cbc81;
+  --carmine: #e74a3b;
+  --onyx: #111111;
+  --carbon: #5c5c5c;
+  --iron: #d7d7d7;
+  --night: #060606;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://fonts.gstatic.com/s/inter/v4/UcC76YfYHzclF-86Kg1g5-4n.woff2') format('woff2');
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://fonts.gstatic.com/s/inter/v4/UcC76YfYHzclF-86Kg1g5-4n.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://fonts.gstatic.com/s/inter/v4/UcC76YfYHzclF-86Kg1g5-4p.woff2') format('woff2');
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.gstatic.com/s/inter/v4/UcC76YfYHzclF-86Kg1g5-4p.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2') format('woff2');
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2')
+    format('woff2');
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.woff2') format('woff2');
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.woff2')
+    format('woff2');
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gnD_vx3rCs.woff2') format('woff2');
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gnD_vx3rCs.woff2')
+    format('woff2');
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2') format('woff2');
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2')
+    format('woff2');
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--white);
-    color: var(--black);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .section {
-    margin: 0 16px 60px 16px;
+  margin: 0 16px 60px 16px;
 }
 
 .link {
-    text-decoration: none;
-    font-style: normal;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .main-header {
-    color: var(--black);
-    text-align: center;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: var(--black);
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section-header {
-    color: var(--black);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  color: var(--black);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 /* HEADER- Anna */
@@ -337,469 +341,538 @@ body {
 /* STORE - Monia POCZĄTEK */
 
 .header-line {
-    flex-grow: 1;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  flex-grow: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 .flex-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin: 0 auto;
-    padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding-top: 32px;
 }
 
 .p-about {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
 }
 
 .flex-store {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding: 32px 0;
-    width: calc((136px * 2) + 16px);
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+  width: calc((136px * 2) + 16px);
+  margin: 0 auto;
 }
 
 .store {
-    flex-basis: calc((100% - 16px) / 2);
+  flex-basis: calc((100% - 16px) / 2);
 }
 
 .store img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .card-header {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19.5px;
-    padding: 8px 0;
-    color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  padding: 8px 0;
+  color: black;
 }
 
 .card-p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14.25px;
-    color: rgba(0, 0, 0, 0.6);
-    padding-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.25px;
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 8px;
 }
 
 .btn-order {
-    display: block;
-    min-width: 208px;
-    height: 44px;
-    margin: 0 auto;
-    background-color: var(--pink);
-    border: none;
-    border-radius: 38px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    cursor: pointer;
+  display: block;
+  min-width: 208px;
+  height: 44px;
+  margin: 0 auto;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 38px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
 }
 
 .btn-order:hover {
-    background-color: var(--pink-hover);
+  background-color: var(--pink-hover);
 }
 
 .btn-order:focus {
-    background-color: var(--pink-focus);
+  background-color: var(--pink-focus);
 }
 
 @media (min-width: 768px) {
-    .section-header {
-        font-size: 44px;
-    }
-    .flex-about {
-        flex-direction: row;
-        padding-top: 30px;
-        gap: 30px;
-    }
-    .item-about {
-        flex-grow: 1;
-        flex-basis: 0;
-    }
-    .p-about {
-        font-size: 20px;
-        line-height: 24.38px;
-    }
-    .flex-store {
-        width: calc((344px * 2) + 32px);
-        gap: 32px;
-        padding: 60px 0;
-    }
-    .card-header {
-        font-size: 32px;
-        line-height: 39.01px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    .card-line {
-        flex-grow: 1;
-        border-bottom: 1px solid rgba(0, 0, 0, 1);
-    }
-    .card-p {
-        font-size: 24px;
-        line-height: 29.26px;
-    }
-    .store {
-        flex-basis: calc((100% - 32px) / 2);
-    }
-    .btn-order {
-        min-width: 280px;
-        height: 64px;
-        font-size: 28px;
-    }
-    .section {
-        margin: 0 24px 100px 24px;
-    }
+  .section-header {
+    font-size: 44px;
+  }
+  .flex-about {
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 30px;
+  }
+  .item-about {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .p-about {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+  .flex-store {
+    width: calc((344px * 2) + 32px);
+    gap: 32px;
+    padding: 60px 0;
+  }
+  .card-header {
+    font-size: 32px;
+    line-height: 39.01px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-line {
+    flex-grow: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+  .card-p {
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+  .store {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .btn-order {
+    min-width: 280px;
+    height: 64px;
+    font-size: 28px;
+  }
+  .section {
+    margin: 0 24px 100px 24px;
+  }
 }
 
 @media (min-width: 1280px) {
-    .flex-about {
-        gap: 66px;
-    }
-    .p-about {
-        font-size: 22px;
-        line-height: 26.82px;
-    }
-    .flex-store {
-        width: calc((600px * 2) + 32px);
-        padding: 80px 0;
-    }
-    .card-header {
-        font-size: 36px;
-        line-height: 43.88px;
-    }
-    .card-p {
-        font-size: 28px;
-        line-height: 34.13px;
-    }
+  .flex-about {
+    gap: 66px;
+  }
+  .p-about {
+    font-size: 22px;
+    line-height: 26.82px;
+  }
+  .flex-store {
+    width: calc((600px * 2) + 32px);
+    padding: 80px 0;
+  }
+  .card-header {
+    font-size: 36px;
+    line-height: 43.88px;
+  }
+  .card-p {
+    font-size: 28px;
+    line-height: 34.13px;
+  }
 }
 
-
 /* STORE - Monia KONIEC */
-
 
 /* HERO - Sylwia START  */
 
 .main-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
 .hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .flower-studio {
-    width: 46px;
-    height: 34px;
-    font-size: 14px;
-    font-weight: 400;
-    color: black;
-    padding-right: 90px;
+  width: 46px;
+  height: 34px;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  padding-right: 90px;
 }
 
 .hero-flower {
-    width: 145px;
-    height: 274px;
-    position: relative;
+  width: 145px;
+  height: 274px;
+  position: relative;
 }
 
 .hero-shop-now {
-    width: 64px;
-    height: 76px;
-    background-color: transparent;
+  width: 64px;
+  height: 76px;
+  background-color: transparent;
 }
 
 .icon-arrow {
-    width: 28px;
+  width: 28px;
 }
 
 svg {
-    fill: currentColor;
-    height: auto;
-    max-width: 66vmin;
-    transform-origin: center;
-    width: 66%;
+  fill: currentColor;
+  height: auto;
+  max-width: 66vmin;
+  transform-origin: center;
+  width: 66%;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 22px;
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 .anemone-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    position: absolute;
-    top: 90%;
-    left: 0%;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  width: 100%;
 }
 
-.anemone-logo>p {
-    width: 288px;
-    height: 63px;
-    font-weight: 400;
-    font-size: 52px;
+.anemone-logo > p {
+  width: 288px;
+  height: 63px;
+  font-weight: 400;
+  font-size: 52px;
 }
 
 @media (min-width: 768px) {
-    .flower-studio {
-        width: 76px;
-        height: 58px;
-        font-size: 24px;
-        font-weight: 400;
-        padding-right: 116px;
-    }
-    .hero-flower {
-        width: 390px;
-        height: 636px;
-    }
-    .icon-arrow {
-        width: 145px;
-        height: 150px;
-        /* padding-right: 72px; */
-    }
-    .anemone-logo>p {
-        width: 658px;
-        height: 146px;
-        font-weight: 400;
-        font-size: 120px;
-    }
+  .flower-studio {
+    width: 76px;
+    height: 58px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-right: 116px;
+  }
+  .hero-flower {
+    width: 390px;
+    height: 636px;
+  }
+  .icon-arrow {
+    width: 145px;
+    height: 150px;
+    /* padding-right: 72px; */
+  }
+  .anemone-logo > p {
+    width: 658px;
+    height: 146px;
+    font-weight: 400;
+    font-size: 120px;
+  }
 }
 
-@media(min-width: 1280px) {
-    .flower-studio {
-        width: 101px;
-        height: 78px;
-        font-size: 32px;
-        font-weight: 400;
-        padding-right: 210px;
-    }
-    .hero-flower {
-        width: 390px;
-        height: 636px;
-    }
-    .icon-arrow {
-        width: 166px;
-        height: 166px;
-    }
-    .anemone-logo>p {
-        width: 877px;
-        height: 195px;
-        font-weight: 400;
-        font-size: 160px;
-    }
+@media (min-width: 1280px) {
+  .flower-studio {
+    width: 101px;
+    height: 78px;
+    font-size: 32px;
+    font-weight: 400;
+    padding-right: 210px;
+  }
+  .hero-flower {
+    width: 390px;
+    height: 636px;
+  }
+  .icon-arrow {
+    width: 166px;
+    height: 166px;
+  }
+  .anemone-logo > p {
+    width: 877px;
+    height: 195px;
+    font-weight: 400;
+    font-size: 160px;
+  }
 }
-
 
 /* HERO - Sylwia END  */
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .container {
-    max-width: 320px;
-    margin: 0 auto;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.blog-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 0 24px;
+  margin-top: 32px;
+}
+.blog-photo {
+  width: 136px;
+  height: 181px;
+}
+.hidden-photo {
+  display: none;
+}
+.blog-arrow-icons {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+.blog-icon-arrow-container {
+  width: 50px;
+  height: 50px;
+}
+.blog-icon-arrow {
+  width: 100%;
+  height: 100%;
+}
+.blog-p-follow {
+  margin-top: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22em;
+  text-align: center;
+  color: var(--black);
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    height: 389px;
-    background-color: var(--black);
-    color: var(--white);
-    font-family: var(--footer-font);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1;
-    padding: 32px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  height: 389px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--footer-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 32px 0 0 0;
 }
 
 .footer-header {
-    display: flex;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 0 0 18px 0;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0 0 18px 0;
 }
 
 .foot-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-part1 {
-    display: none;
+  display: none;
 }
 
 .footer-header {
-    font-weight: 700;
-    font-size: 16px;
-    margin: 0 0 18px 0;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 18px 0;
 }
 
 .footer-part2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-ot {
-    margin: 0 0 6px 0;
+  margin: 0 0 6px 0;
 }
 
 .footer-part3 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .footer-nav-item,
 .footer-tel {
-    padding: 0 0 12px 0;
+  padding: 0 0 12px 0;
 }
 
 .footer-mail {
-    padding: 0 0 12px 0;
-    width: 147px;
-    display: flex;
-    flex-direction: column;
+  padding: 0 0 12px 0;
+  width: 147px;
+  display: flex;
+  flex-direction: column;
 }
 
 address {
-    font-family: var(--footer-font);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2;
-    width: 147px;
-    height: 2em;
+  font-family: var(--footer-font);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 147px;
+  height: 2em;
 }
 
 .footer-sm {
-    margin: 0 0 0 18px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  margin: 0 0 0 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .footer-icon {
-    fill: var(--white);
-    vertical-align: top;
-    margin-bottom: 18px;
+  fill: var(--white);
+  vertical-align: top;
+  margin-bottom: 18px;
 }
 
 .footer-sm-fb {
-    margin: 0 0 0 14px;
+  margin: 0 0 0 14px;
 }
-
 
 /* ===== TABLET ===== */
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 100%;
-        max-width: 768px;
-        margin: auto;
-    }
-    .footer {
-        height: 298px;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1;
-        padding: 60px 0 0 0;
-    }
-    .foot-box {
-        height: 100%;
-    }
-    .footer-header {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 1;
-        margin: 0 0 18px 0;
-    }
-    .footer-part2 {
-        width: calc((100% - 24px) / 2);
-    }
-    .footer-part3 {
-        width: calc((100% - 24px) / 2);
-        padding: 0 0 0 0;
-    }
-    .footer-mail {
-        display: flex;
-        flex-direction: row;
-        width: 257px;
-    }
-    .footer-sm {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 0 64px;
-    }
-    .footer-sm-fb {
-        margin: 0 0 0 0;
-    }
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+  }
+  .blog-photos {
+    gap: 32px;
+    margin-top: 60px;
+  }
+  .blog-photo {
+    width: 344px;
+    height: 398px;
+  }
+  .blog-arrow-icons {
+    margin-top: 8px;
+  }
+  .blog-icon-arrow-container {
+    width: 61px;
+    height: 61px;
+  }
+  .blog-p-follow {
+    margin-top: 18px;
+    font-size: 36px;
+  }
+  .footer {
+    height: 298px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 60px 0 0 0;
+  }
+  .foot-box {
+    height: 100%;
+  }
+  .footer-header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 18px 0;
+  }
+  .footer-part2 {
+    width: calc((100% - 24px) / 2);
+  }
+  .footer-part3 {
+    width: calc((100% - 24px) / 2);
+    padding: 0 0 0 0;
+  }
+  .footer-mail {
+    display: flex;
+    flex-direction: row;
+    width: 257px;
+  }
+  .footer-sm {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 64px;
+  }
+  .footer-sm-fb {
+    margin: 0 0 0 0;
+  }
 }
-
 
 /* ===== DESKTOP ===== */
 
 @media screen and (min-width: 1280px) {
-    .container {
-        width: 100%;
-        max-width: 1280px;
-        margin: auto;
-    }
-    .footer {
-        height: 298px;
-        padding: 72px 0 0 0;
-    }
-    .foot-box {
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer-part1 {
-        display: flex;
-    }
-    .footer-part2 {
-        width: calc((100% - 354px) / 2);
-    }
-    .footer-part3 {
-        width: calc((100% - 354px) / 2);
-        padding: 0 0 0 96px;
-    }
-    .footer-logo {
-        fill: #ffffff;
-        margin: 0 210px 0 24px;
-    }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .hidden-photo {
+    display: inline-block;
+  }
+  .blog-photos {
+    gap: 31px;
+    margin-top: 122px;
+  }
+  .blog-photo {
+    width: 390px;
+    height: 421px;
+  }
+  .blog-arrow-icons {
+    margin-top: 18px;
+  }
+  .blog-p-follow {
+    margin-top: 24px;
+  }
+  .footer {
+    height: 298px;
+    padding: 72px 0 0 0;
+  }
+  .foot-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-part1 {
+    display: flex;
+  }
+  .footer-part2 {
+    width: calc((100% - 354px) / 2);
+  }
+  .footer-part3 {
+    width: calc((100% - 354px) / 2);
+    padding: 0 0 0 96px;
+  }
+  .footer-logo {
+    fill: #ffffff;
+    margin: 0 210px 0 24px;
+  }
 }
