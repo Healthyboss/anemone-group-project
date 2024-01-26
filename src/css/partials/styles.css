@@ -257,18 +257,18 @@ body {
   width: 28px;
 }
 
-svg {
-  fill: currentColor;
-  height: auto;
-  max-width: 66vmin;
-  transform-origin: center;
-  width: 66%;
-}
+/* svg { */
+/* fill: currentColor; */
+/* height: auto; */
+/* max-width: 66vmin; */
+/* transform-origin: center; */
+/* width: 66%; */
+/* } */
 
-p {
-  margin-top: 0;
-  margin-bottom: 22px;
-}
+/* p { */
+/* margin-top: 0; */
+/* margin-bottom: 22px; */
+/* } */
 
 .anemone-logo {
   display: flex;
@@ -465,7 +465,7 @@ address {
 }
 
 .footer-sm {
-  margin: 0 0 0 18px;
+  margin: 0 0 0 48px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -586,7 +586,7 @@ address {
   }
   .footer-part3 {
     width: calc((100% - 24px) / 2);
-    padding: 0 0 0 0;
+    margin: 0 0 0 44px;
   }
   .footer-mail {
     display: flex;
