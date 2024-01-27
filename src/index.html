@@ -6,8 +6,8 @@
     <title>Anemone</title>
     <link rel="icon" href="images/icons.svg#favicon" type="image/svg+xml" />
     <!-- <link rel="apple-touch-icon" sizes="45x35" href="./images/icons.svg#favicon_mobile" />
-  <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-touch-icon-72x72.png" /> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-touch-icon-72x72.png" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,7 +39,98 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <body>
+      <header>
+        <include src="./partials/header.html"></include>
+      </header>
+      <main>
+        <div class="container">
+          <include src="./partials/hero.html"></include>
+          <include src="./partials/about.html"></include>
+          <include src="./partials/store.html"></include>
+          <include src="./partials/delivery.html"></include>
+          <include src="./partials/blog.html"></include>
+        </div>
+      </main>
+      <footer>
+        <include src="./partials/footer.html"></include>
+      </footer>
+
+      <!-- modal -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close" data-modal-close>
+            <svg>
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+          </button>
+          <h2 class="contact-header" id="contact-header">Contact us</h2>
+          <p class="contact-p" id="contact-p">
+            If you have any additional questions or you want to clarify something before you make an
+            order please fill in your contact details. We will call you back.
+          </p>
+          <form id="contactForm" name="contact-form" autocomplete="on" novalidate>
+            <label class="contact-field-header"> Name </label>
+            <span class="contact-field">
+              <input
+                type="text"
+                name="contact-name"
+                id="name"
+                class="contact-field-box"
+                placeholder="Kristin Watson"
+              />
+            </span>
+            <label class="contact-field-header"> Email </label>
+            <span class="contact-field">
+              <input
+                type="email"
+                name="contact-email"
+                id="email"
+                class="contact-field-box"
+                placeholder="tanya.hill@example.com"
+              />
+            </span>
+            <div class="contact-send">
+              <button
+                type="submit"
+                class="send-button"
+                id="submitButton"
+                disabled
+                onclick="submitForm()"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+          <div class="thank-you-message" id="thankYouMessage">
+            <div class="tymsg-h" id="tymsgh">
+              <svg class="plantsicon">
+                <use href="./images/icons.svg#icon-plants" id="plantsicon"></use>
+              </svg>
+              <h2 class="contact-header">Thank you!</h2>
+              <p class="tymsg-p" id="tymsgp">
+                We have received your contact details and will reach you soon.
+              </p>
+              <div class="contact-send">
+                <button type="button" class="continue-button" data-modal-close>Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
+      <!-- <script src="./js/modal.js"></script> -->
+    </body>
+    <script src="./js/contact-modal.js"></script>
+    <script src="./js/subscribe-modal.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>
