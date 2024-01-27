@@ -1,48 +1,33 @@
 <div class="container">
-    <section id="hero">
-        <h1 class="main-header">
-            <div class="main-page">
-                <div class="hero">
-                    <p class="flower-studio">flower studio</p>
+  <section id="hero">
+    <h1 class="main-header"></h1>
+    <div class="hero">
+      <p class="flower-studio">flower studio</p>
 
-                    <img src="/src/images/image_home_page.jpg" alt="hero-flower" srcset="/src/images/image_home_page@2x.jpg" class="hero-flower" />
-                    <button data-modal-open type="button" class="hero-shop-now">
-            <svg viewBox="0 0 64 76" width="64" height="76">
-              <defs>
-                <path
-                  id="circle"
-                  d="
-                    M 32, 38
-                    m -16, 0
-                    a 16,16 0 1,1 32,0
-                    a 16,16 0 1,1 -32,0"
-                />
-              </defs>
-              <g fill="currentColor">
-                <text font-size="13">
-                  <textPath xlink:href="#circle">shop now shop now shop</textPath>
-                </text>
-                <!-- <svg
-                  x="18"
-                  y="24"
-                  width="28"
-                  height="28"
-                  viewBox="0 0 64 76"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ><use href="./images/icons.svg#icon-arrow"></use>
-                </svg> -->
-              </g>
-            </svg>
-          </button>
-                </div>
-                <div class="anemone-logo">
-                    <p>ANEMONE</p>
-                </div>
-            </div>
-        </h1>
-    </section>
+      <img
+        src="./images/image_home_page_desktop.jpg"
+        alt="hero-flower"
+        srcset="./images/image_home_page@2x_desktop.jpg"
+        class="hero-flower"
+      />
+      <button data-modal-open type="button" class="hero-shop-now-mobile">
+        <svg class="hero-svg" viewBox="0 0 64 76" width="64" height="76">
+          <use href="./images/icons.svg#icon-shop-now-mobile"></use>
+        </svg>
+      </button>
+      <button data-modal-open type="button" class="hero-shop-now-tablet">
+        <svg class="hero-svg" viewBox="0 0 145 150" width="145" height="150">
+          <use href="./images/icons.svg#icon-shop-now-tablet"></use>
+        </svg>
+      </button>
+      <button data-modal-open type="button" class="hero-shop-now-desktop">
+        <svg class="hero-svg" viewBox="0 0 166 166" width="166" height="166">
+          <use href="./images/icons.svg#icon-shop-now-desktop"></use>
+        </svg>
+      </button>
+      <div class="anemone-logo">
+        <p>ANEMONE</p>
+      </div>
+    </div>
+  </section>
 </div>
