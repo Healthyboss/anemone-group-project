@@ -416,12 +416,6 @@ body {
   font-weight: 400;
   font-size: 52px;
 }
-.anemone-logo > p {
-  width: 877px;
-  height: 195px;
-  font-weight: 400;
-  font-size: 160px;
-}
 
 /* HERO - Sylwia END  */
 /* BLOG - Julia - START */
@@ -474,13 +468,29 @@ body {
   text-align: center;
   color: var(--black);
 }
-
-.delivery-section {
-  background-color: #fff;
-  padding-bottom: 60px;
-  padding-left: 0px;
-  padding-right: 0px;
+.btn-subscribe {
+  display: block;
+  min-width: 170px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 38px;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  margin-bottom: 60px;
 }
+.btn-subscribe:hover {
+  background-color: var(--pink-hover);
+}
+.btn-subscribe:focus {
+  background-color: var(--pink-focus);
+}
+/* BLOG - Julia - END */
 
 .footer {
   display: flex;
@@ -748,11 +758,8 @@ address {
     font-weight: 400;
     font-size: 120px;
   }
-  .delivery-section {
-    background-color: var(--white);
-    padding-bottom: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
+  .anemone-logo {
+    top: 91%;
   }
 }
 
@@ -880,55 +887,70 @@ address {
 
 /* Basia - delivery */
 
-.delivery-svg-ellipse {
-  fill: #fff;
-  stroke-width: 1px;
-  stroke: #000;
-  margin-right: 8px;
-  width: 40px;
-  height: 40px;
-}
-.delivery-order-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 14px;
-  margin-top: 45px;
-}
-.delivery-order-number {
-  display: flex;
-  align-items: center;
-}
-.delivery-svg-position {
-  position: relative;
-}
-.number-in-svg {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-
-  color: #000;
-
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-}
-.img {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-.delivery-image-position {
-  margin-top: 26px;
-}
-.delivery-article {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  max-width: 232px;
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .delivery-section {
+    background-color: #fff;
+    padding-bottom: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .list {
+    list-style: none;
+  }
+  .delivery-svg-ellipse {
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #000;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+  }
+  .delivery-order-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    margin-top: 45px;
+  }
+  .delivery-order-number {
+    display: flex;
+    align-items: center;
+  }
+  .delivery-svg-position {
+    position: relative;
+  }
+  .number-in-svg {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .delivery-image-position {
+    margin-top: 26px;
+  }
+  .delivery-article {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 232px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -938,7 +960,15 @@ address {
     margin: 0 auto;
     padding: 0 15px;
   }
-
+  .delivery-section {
+    background-color: #fff;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .list {
+    list-style: none;
+  }
   .delivery-svg-ellipse {
     margin-right: 8px;
     width: 64px;
@@ -1003,7 +1033,9 @@ address {
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  .list {
+    list-style: none;
+  }
   .delivery-svg-ellipse {
     width: 64px;
     height: 64px;
@@ -1056,20 +1088,3 @@ address {
 }
 
 /* Basia - delivery - koniec */
-
-.flower-studio {
-  width: 101px;
-  height: 78px;
-  font-size: 32px;
-  font-weight: 400;
-  padding-right: 210px;
-}
-.hero-flower {
-  width: 390px;
-  height: 636px;
-}
-.icon-arrow {
-  width: 166px;
-  height: 166px;
-}
-/* HERO - Sylwia END  */
