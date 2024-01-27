@@ -145,6 +145,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -176,6 +177,7 @@ body {
 .list {
   list-style: none;
 }
+
 .header-list-nav {
   color: white;
   padding: 24px 0;
@@ -424,6 +426,13 @@ svg {
   line-height: 1.22em;
   text-align: center;
   color: var(--black);
+}
+
+.delivery-section {
+  background-color: #fff;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .footer {
@@ -688,6 +697,12 @@ address {
     font-weight: 400;
     font-size: 120px;
   }
+  .delivery-section {
+    background-color: var(--white);
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /* ===== DESKTOP ===== */
@@ -805,84 +820,57 @@ address {
   }
 }
 
-/* HERO - Sylwia END  */
-
-
-
-
-
-
-
-
 /* Basia - delivery */
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .container {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  .delivery-section {
-    background-color: #fff;
-    padding-bottom: 60px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .list {
-    list-style: none;
-  }
+.delivery-svg-ellipse {
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #000;
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+}
+.delivery-order-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-top: 45px;
+}
+.delivery-order-number {
+  display: flex;
+  align-items: center;
+}
+.delivery-svg-position {
+  position: relative;
+}
+.number-in-svg {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 
-  .delivery-svg-ellipse {
-    fill: #fff;
-    stroke-width: 1px;
-    stroke: #000;
-    margin-right: 8px;
-    width: 40px;
-    height: 40px;
-  }
-  .delivery-order-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 14px;
-    margin-top: 45px;
-  }
-  .delivery-order-number {
-    display: flex;
-    align-items: center;
-  }
-  .delivery-svg-position {
-    position: relative;
-  }
-  .number-in-svg {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+  color: #000;
 
-    color: #000;
-
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-  }
-  .img {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .delivery-image-position {
-    margin-top: 26px;
-  }
-  .delivery-article {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    max-width: 232px;
-  }
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+.img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.delivery-image-position {
+  margin-top: 26px;
+}
+.delivery-article {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 232px;
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .container {
@@ -890,15 +878,6 @@ address {
     max-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
-  }
-  .delivery-section {
-    background-color: #fff;
-    padding-bottom: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .list {
-    list-style: none;
   }
 
   .delivery-svg-ellipse {
@@ -969,9 +948,6 @@ address {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .list {
-    list-style: none;
-  }
 
   .delivery-svg-ellipse {
     width: 64px;
@@ -1030,28 +1006,26 @@ address {
 }
 /* Basia - delivery - koniec */
 
-  .flower-studio {
-    width: 101px;
-    height: 78px;
-    font-size: 32px;
-    font-weight: 400;
-    padding-right: 210px;
-  }
-  .hero-flower {
-    width: 390px;
-    height: 636px;
-  }
-  .icon-arrow {
-    width: 166px;
-    height: 166px;
-  }
-  .anemone-logo > p {
-    width: 877px;
-    height: 195px;
-    font-weight: 400;
-    font-size: 160px;
-  }
-
+.flower-studio {
+  width: 101px;
+  height: 78px;
+  font-size: 32px;
+  font-weight: 400;
+  padding-right: 210px;
+}
+.hero-flower {
+  width: 390px;
+  height: 636px;
+}
+.icon-arrow {
+  width: 166px;
+  height: 166px;
+}
+.anemone-logo > p {
+  width: 877px;
+  height: 195px;
+  font-weight: 400;
+  font-size: 160px;
+}
 
 /* HERO - Sylwia END  */
-
