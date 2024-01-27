@@ -29,7 +29,7 @@ ul,
 ol {
   list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 :root {
@@ -44,52 +44,44 @@ ol {
   --night: #060606;
   --black: #000000;
   --white: #ffffff;
+  --black-6: #00000099;
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('https://fonts.gstatic.com/s/inter/v4/UcC76YfYHzclF-86Kg1g5-4n.woff2') format('woff2');
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 }
-
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('https://fonts.gstatic.com/s/inter/v4/UcC76YfYHzclF-86Kg1g5-4p.woff2') format('woff2');
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2')
-    format('woff2');
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.woff2')
-    format('woff2');
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gnD_vx3rCs.woff2')
-    format('woff2');
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2')
-    format('woff2');
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 }
 
 body {
@@ -126,12 +118,10 @@ body {
   align-items: center;
   gap: 16px;
 }
-
 /* STORE - Monia POCZĄTEK */
-
 .header-line {
   flex-grow: 1;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid var(--black-6);
 }
 
 .flex-about {
@@ -143,6 +133,131 @@ body {
   margin: 0 auto;
   padding-top: 32px;
 }
+
+/* HEADER- Anna */
+.header {
+  background: var(--white-background);
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  background-color: transparent;
+  border: none;
+}
+.icon {
+  fill: #0e0e0e;
+}
+.tel-icon {
+  display: flex;
+}
+.header-list {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+.list {
+  list-style: none;
+}
+.header-list-nav {
+  color: white;
+  padding: 24px 0;
+}
+
+.address-main {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  margin: 0;
+}
+.address-list {
+  color: var(--text-color);
+}
+.header-flex {
+  display: none;
+}
+.mobile-menu-layout {
+  padding: 16px 16px 0 16px;
+  margin: auto;
+}
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu-layout button {
+  background-color: transparent;
+  border: none;
+  margin-left: 20px;
+}
+.mobile-header-nav .header-list {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 26px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.mobile-header-nav .header-list-nav {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.js-menu-container {
+  display: none;
+}
+.js-menu-container.is-open {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-flow: column nowrap;
+  padding: 124px 110px 180px 110px;
+  width: 100%;
+  height: 100%;
+  background-color: #e86f54;
+  z-index: 1;
+}
+.mobile-menu-close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.button-modal-box {
+  position: absolute;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* STORE - Monia POCZĄTEK */
 
 .p-about {
   font-family: 'Montserrat', sans-serif;
@@ -158,16 +273,11 @@ body {
   align-items: center;
   gap: 16px;
   padding: 32px 0;
-  width: calc((136px * 2) + 16px);
   margin: 0 auto;
 }
 
 .store {
   flex-basis: calc((100% - 16px) / 2);
-}
-
-.store img {
-  max-width: 100%;
 }
 
 .card-header {
@@ -176,7 +286,7 @@ body {
   font-size: 16px;
   line-height: 19.5px;
   padding: 8px 0;
-  color: black;
+  color: var(--black);
 }
 
 .card-p {
@@ -184,7 +294,7 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 14.25px;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--black-6);
   padding-bottom: 8px;
 }
 
@@ -196,7 +306,7 @@ body {
   background-color: var(--pink);
   border: none;
   border-radius: 38px;
-  color: white;
+  color: var(--white);
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -211,79 +321,6 @@ body {
 .btn-order:focus {
   background-color: var(--pink-focus);
 }
-
-@media (min-width: 768px) {
-  .section-header {
-    font-size: 44px;
-  }
-  .flex-about {
-    flex-direction: row;
-    padding-top: 30px;
-    gap: 30px;
-  }
-  .item-about {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-  .p-about {
-    font-size: 20px;
-    line-height: 24.38px;
-  }
-  .flex-store {
-    width: calc((344px * 2) + 32px);
-    gap: 32px;
-    padding: 60px 0;
-  }
-  .card-header {
-    font-size: 32px;
-    line-height: 39.01px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .card-line {
-    flex-grow: 1;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-  }
-  .card-p {
-    font-size: 24px;
-    line-height: 29.26px;
-  }
-  .store {
-    flex-basis: calc((100% - 32px) / 2);
-  }
-  .btn-order {
-    min-width: 280px;
-    height: 64px;
-    font-size: 28px;
-  }
-  .section {
-    margin: 0 24px 100px 24px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .flex-about {
-    gap: 66px;
-  }
-  .p-about {
-    font-size: 22px;
-    line-height: 26.82px;
-  }
-  .flex-store {
-    width: calc((600px * 2) + 32px);
-    padding: 80px 0;
-  }
-  .card-header {
-    font-size: 36px;
-    line-height: 43.88px;
-  }
-  .card-p {
-    font-size: 28px;
-    line-height: 34.13px;
-  }
-}
-
 /* STORE - Monia KONIEC */
 
 /* HERO - Sylwia START  */
@@ -330,15 +367,6 @@ body {
 
 svg {
   fill: currentColor;
-  height: auto;
-  max-width: 66vmin;
-  transform-origin: center;
-  width: 66%;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 22px;
 }
 
 .anemone-logo {
@@ -359,7 +387,286 @@ p {
   font-size: 52px;
 }
 
+.blog-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 0 24px;
+  margin-top: 32px;
+}
+.blog-photo {
+  width: 136px;
+  height: 181px;
+}
+.hidden-photo {
+  display: none;
+}
+.blog-arrow-icons {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+.blog-icon-arrow-container {
+  width: 50px;
+  height: 50px;
+}
+.blog-icon-arrow {
+  width: 100%;
+  height: 100%;
+}
+.blog-p-follow {
+  margin-top: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22em;
+  text-align: center;
+  color: var(--black);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 389px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--footer-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 32px 16px;
+}
+
+.footer-header {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 18px 0;
+}
+
+.foot-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-part1 {
+  display: none;
+}
+
+.footer-part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-ot {
+  margin: 0 0 6px 0;
+}
+
+.footer-part3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-nav-item,
+.footer-tel {
+  padding: 0 0 12px 0;
+}
+
+.footer-mail {
+  padding: 0 0 12px 0;
+  width: 147px;
+  display: flex;
+  flex-direction: column;
+}
+
+address {
+  font-family: var(--footer-font);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 147px;
+  height: 2em;
+}
+
+.footer-sm {
+  margin: 0 57px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.footer-icon {
+  fill: var(--white);
+  vertical-align: top;
+  margin-bottom: 18px;
+}
+
+.footer-sm-fb {
+  margin: 0 0 0 14px;
+}
+
+/* ===== TABLET ===== */
+
 @media (min-width: 768px) {
+  .mobile-menu-layout {
+    display: none;
+  }
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .header-list {
+    padding: 16px 0 17px 0;
+    margin: 0;
+    gap: 24px;
+  }
+  .header-flex {
+    display: block;
+  }
+  .header-list-nav {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header-nav {
+    height: 57px;
+  }
+  .address {
+    margin-left: 0;
+  }
+
+  .logo-div {
+    margin-right: 70px;
+  }
+  .desktop-icon-div {
+    display: none;
+  }
+  .tablet-icon-div {
+    display: block;
+    margin-left: 70px;
+  }
+  .header-div {
+    padding: 24px 9px 0 9px;
+  }
+  .section {
+    margin: 0 24px 100px 24px;
+  }
+  .section-header {
+    font-size: 44px;
+  }
+
+  .flex-about {
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 30px;
+  }
+
+  .item-about {
+    flex-basis: 50%;
+  }
+
+  .p-about {
+    font-size: 20px;
+    line-height: 24.38px;
+    flex-basis: 50%;
+  }
+
+  .flex-store {
+    gap: 32px;
+    padding: 60px 0;
+  }
+
+  .card-header {
+    font-size: 32px;
+    line-height: 39.01px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-line {
+    flex-grow: 1;
+    border-bottom: 1px solid var(--black);
+  }
+
+  .card-p {
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+
+  .store {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .btn-order {
+    min-width: 280px;
+    height: 64px;
+    font-size: 28px;
+  }
+
+  .blog-photos {
+    gap: 32px;
+    margin-top: 60px;
+  }
+  .blog-photo {
+    width: 344px;
+    height: 398px;
+  }
+  .blog-arrow-icons {
+    margin-top: 8px;
+  }
+  .blog-icon-arrow-container {
+    width: 61px;
+    height: 61px;
+  }
+  .blog-p-follow {
+    margin-top: 18px;
+    font-size: 36px;
+  }
+  .footer {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 60px 16px;
+  }
+  .footer-header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 18px 0;
+  }
+  .footer-part2 {
+    width: calc((100% - 24px) / 2);
+  }
+  .footer-part3 {
+    width: calc((100% - 24px) / 2);
+  }
+  .footer-mail {
+    display: flex;
+    flex-direction: row;
+    width: 257px;
+  }
+  .footer-sm {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 64px;
+  }
+  .footer-sm-fb {
+    margin: 0 0 0 0;
+  }
   .flower-studio {
     width: 76px;
     height: 58px;
@@ -374,7 +681,6 @@ p {
   .icon-arrow {
     width: 145px;
     height: 150px;
-    /* padding-right: 72px; */
   }
   .anemone-logo > p {
     width: 658px;
@@ -384,7 +690,98 @@ p {
   }
 }
 
+/* ===== DESKTOP ===== */
+
 @media (min-width: 1280px) {
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .tablet-icon-div {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-list {
+    padding: 12px 0 21px 0;
+    gap: 48px;
+  }
+  .header-nav {
+    height: 57px;
+    max-width: 1232px;
+  }
+  .header-div {
+    padding: 28px 9px 0 9px;
+  }
+
+  .flex-about {
+    gap: 90px;
+    justify-content: space-between;
+  }
+
+  .p-about {
+    font-size: 22px;
+    line-height: 26.82px;
+    max-width: 510px;
+  }
+
+  .item-about {
+    max-width: 632px;
+  }
+
+  .flex-store {
+    padding: 80px 0;
+  }
+
+  .card-header {
+    font-size: 36px;
+    line-height: 43.88px;
+  }
+
+  .card-p {
+    font-size: 28px;
+    line-height: 34.13px;
+  }
+  .hidden-photo {
+    display: inline-block;
+  }
+  .blog-photos {
+    gap: 31px;
+    margin-top: 122px;
+  }
+  .blog-photo {
+    width: 390px;
+    height: 421px;
+  }
+  .blog-arrow-icons {
+    margin-top: 18px;
+  }
+  .blog-p-follow {
+    margin-top: 24px;
+  }
+  .footer {
+    padding: 72px 24px;
+  }
+  .foot-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-part1 {
+    display: flex;
+  }
+  .footer-part2 {
+    width: calc((100% - 354px) / 2);
+  }
+  .footer-part3 {
+    width: calc((100% - 354px) / 2);
+    padding: 0 0 0 90px;
+    margin: 0 0 0 44px;
+  }
+  .footer-logo {
+    fill: #ffffff;
+    margin: 0 210px 0 24px;
+  }
   .flower-studio {
     width: 101px;
     height: 78px;
@@ -410,187 +807,12 @@ p {
 
 /* HERO - Sylwia END  */
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-}
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  height: 389px;
-  background-color: var(--black);
-  color: var(--white);
-  font-family: var(--footer-font);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  padding: 32px 0 0 0;
-}
 
-.footer-header {
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 0 0 18px 0;
-}
 
-.foot-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
 
-.footer-part1 {
-  display: none;
-}
 
-.footer-header {
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0 0 18px 0;
-}
-
-.footer-part2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.footer-ot {
-  margin: 0 0 6px 0;
-}
-
-.footer-part3 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.footer-nav-item,
-.footer-tel {
-  padding: 0 0 12px 0;
-}
-
-.footer-mail {
-  padding: 0 0 12px 0;
-  width: 147px;
-  display: flex;
-  flex-direction: column;
-}
-
-address {
-  font-family: var(--footer-font);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  width: 147px;
-  height: 2em;
-}
-
-.footer-sm {
-  margin: 0 0 0 18px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.footer-icon {
-  fill: var(--white);
-  vertical-align: top;
-  margin-bottom: 18px;
-}
-
-.footer-sm-fb {
-  margin: 0 0 0 14px;
-}
-
-/* ===== TABLET ===== */
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 768px;
-    margin: auto;
-  }
-  .footer {
-    height: 298px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1;
-    padding: 60px 0 0 0;
-  }
-  .foot-box {
-    height: 100%;
-  }
-  .footer-header {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1;
-    margin: 0 0 18px 0;
-  }
-  .footer-part2 {
-    width: calc((100% - 24px) / 2);
-  }
-  .footer-part3 {
-    width: calc((100% - 24px) / 2);
-    padding: 0 0 0 0;
-  }
-  .footer-mail {
-    display: flex;
-    flex-direction: row;
-    width: 257px;
-  }
-  .footer-sm {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 64px;
-  }
-  .footer-sm-fb {
-    margin: 0 0 0 0;
-  }
-}
-
-/* ===== DESKTOP ===== */
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-  }
-  .footer {
-    height: 298px;
-    padding: 72px 0 0 0;
-  }
-  .foot-box {
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer-part1 {
-    display: flex;
-  }
-  .footer-part2 {
-    width: calc((100% - 354px) / 2);
-  }
-  .footer-part3 {
-    width: calc((100% - 354px) / 2);
-    padding: 0 0 0 96px;
-  }
-  .footer-logo {
-    fill: #ffffff;
-    margin: 0 210px 0 24px;
-  }
-}
 
 /* Basia - delivery */
 
@@ -807,3 +1029,29 @@ address {
   }
 }
 /* Basia - delivery - koniec */
+=======
+  .flower-studio {
+    width: 101px;
+    height: 78px;
+    font-size: 32px;
+    font-weight: 400;
+    padding-right: 210px;
+  }
+  .hero-flower {
+    width: 390px;
+    height: 636px;
+  }
+  .icon-arrow {
+    width: 166px;
+    height: 166px;
+  }
+  .anemone-logo > p {
+    width: 877px;
+    height: 195px;
+    font-weight: 400;
+    font-size: 160px;
+  }
+}
+
+/* HERO - Sylwia END  */
+>>>>>>> main
