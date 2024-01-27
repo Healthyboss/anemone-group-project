@@ -34,7 +34,7 @@
     </main>
     <include src="./partials/footer.html"></include>
 
-    <!-- modal -->
+    <!-- contact modal -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -95,6 +95,53 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- subscribe-modal -->
+
+    <div class="backdrop is-hidden" subscribe-modal>
+      <div class="modal2">
+        <button class="modal-close" subscribe-modal-close>
+          <svg>
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <div>
+          <img
+            class="sub-hero"
+            src="images/modal-newsletter.jpg"
+            srcset="./images/modal-newsletter.jpg 1x, ./images/modal-newsletter_2x.jpg 2x"
+            alt="Beautiful bouquet consisting of carmine roses and tulips."
+          />
+        </div>
+        <h2 class="sub-header">Follow to our newsletter</h2>
+        <p class="sub-p">
+          Be the first to get exclusive offers and the latest news on our product directly in your
+          box.
+        </p>
+        <form id="subscribeForm" name="subscribe-form" autocomplete="on" novalidate>
+          <label class="sub-field-header">Email</label>
+          <span class="sub-field">
+            <input
+              type="email"
+              name="subscribe-email"
+              id="sub-email"
+              class="sub-field-box"
+              placeholder="Your email"
+            />
+          </span>
+          <div class="sub-send">
+            <button
+              type="submit"
+              class="subscribe-button"
+              id="subscribeButton"
+              disabled
+              onclick="submitForm()"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 

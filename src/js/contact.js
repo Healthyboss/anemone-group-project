@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function closeModal() {
     const modal = document.querySelector('.backdrop');
 
-    // Hide the modal
+  // Hide the modal
     modal.classList.add('is-hidden');
   }
   // function to submit
