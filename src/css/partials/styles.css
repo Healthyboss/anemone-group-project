@@ -627,7 +627,6 @@ address {
   }
   .delivery-order-number {
     display: flex;
-
     align-items: center;
   }
   .delivery-svg-position {
