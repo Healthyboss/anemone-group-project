@@ -833,6 +833,11 @@ body {
   background-color: var(--pink-focus);
 }
 
+.subscribe-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 /* ===== BLOG MODAL END ===== */
 
 .footer {
