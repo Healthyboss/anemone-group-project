@@ -755,7 +755,6 @@ body {
   width: 272px;
   height: 121px;
   object-fit: cover;
-  border: dotted 1px yellowgreen;
 }
 
 .sub-header {
@@ -763,7 +762,7 @@ body {
   font-weight: 600;
   line-height: normal;
   margin: 18px 0 14px 0;
-  color: var(--carbon);
+  color: var(--black);
 }
 
 .sub-p {
@@ -841,6 +840,11 @@ body {
 
 .subscribe-button:focus {
   background-color: var(--pink-focus);
+}
+
+.subscribe-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 /* ===== BLOG MODAL END ===== */
@@ -1121,6 +1125,70 @@ address {
     height: 64px;
     font-size: 28px;
   }
+
+  /* ===== BLOG MODAL ===== */
+
+  .modal2 {
+    max-width: 588px;
+    width: 100%;
+    padding: 0 0 40px 0;
+  }
+
+  .sub-hero {
+    width: 588px;
+    height: 271px;
+  }
+
+  .sub-header {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 28px 0 24px 0;
+  }
+
+  .sub-p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 336px;
+  }
+
+  .sub-field {
+    width: 100%;
+    max-width: 336px;
+  }
+
+  .sub-field-header {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 32px 0 8px 0;
+    width: 336px;
+  }
+
+  .sub-field-box {
+    width: 100%;
+    max-width: 336px;
+    height: 49px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 0 0 12px;
+    margin: 0 0 28px 0;
+  }
+
+  .subscribe-button {
+    width: 336px;
+    margin: 0 0 4px 0;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 15px 0;
+  }
+
+  /* ===== BLOG MODAL END ===== */
+
   .footer {
     font-size: 16px;
     font-weight: 500;
@@ -1178,6 +1246,7 @@ address {
     margin-left: 20px;
   }
   /* ===== HERO MODAL ===== */
+  
   .modal {
     max-width: 480px;
   }
@@ -1231,7 +1300,9 @@ address {
     font-size: 18px;
     height: 50px;
   }
+  
   /* ===== HERO MODAL END ===== */
+  
   .anemone-logo > p {
     width: 658px;
     height: 146px;
@@ -1335,6 +1406,54 @@ address {
   .blog-p-follow {
     margin-top: 24px;
   }
+  
+  .modal2 {
+    max-width: 860px;
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .sub-header {
+    margin: 0 0 24px 0;
+  }
+  .sub-hero {
+    width: 428px;
+    height: 528px;
+  }
+
+  .sub-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  /* ===== BLOG MODAL END ===== */
+  
+  .footer {
+    padding: 72px 24px;
+  }
+  .foot-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-part1 {
+    display: flex;
+  }
+  .footer-part2 {
+    width: calc((100% - 354px) / 2);
+  }
+  .footer-part3 {
+    width: calc((100% - 354px) / 2);
+    padding: 0 0 0 90px;
+    margin: 0 0 0 44px;
+  }
+  .footer-logo {
+    fill: #ffffff;
+    margin: 0 210px 0 24px;
+  }
+=======
+  
   .hero {
     margin-bottom: 200px;
   }
