@@ -22,9 +22,7 @@
   </head>
 
   <body>
-    <header>
-      <include src="./partials/header.html"></include>
-    </header>
+    <include src="./partials/header.html"></include>
     <main>
       <div class="container">
         <include src="./partials/hero.html"></include>
@@ -38,12 +36,123 @@
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
+
+    <!-- contact modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg>
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h2 class="contact-header" id="contact-header">Contact us</h2>
+        <p class="contact-p" id="contact-p">
+          If you have any additional questions or you want to clarify something before you make an
+          order please fill in your contact details. We will call you back.
+        </p>
+        <form id="contactForm" name="contact-form" autocomplete="on" novalidate>
+          <label class="contact-field-header"> Name </label>
+          <span class="contact-field">
+            <input
+              type="text"
+              name="contact-name"
+              id="name"
+              class="contact-field-box"
+              placeholder="Kristin Watson"
+            />
+          </span>
+          <label class="contact-field-header"> Email </label>
+          <span class="contact-field">
+            <input
+              type="email"
+              name="contact-email"
+              id="email"
+              class="contact-field-box"
+              placeholder="tanya.hill@example.com"
+            />
+          </span>
+          <div class="contact-send">
+            <button
+              type="submit"
+              class="send-button"
+              id="submitButton"
+              disabled
+              onclick="submitForm()"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+        <div class="thank-you-message" id="thankYouMessage">
+          <div class="tymsg-h" id="tymsgh">
+            <svg class="plantsicon">
+              <use href="./images/icons.svg#icon-plants" id="plantsicon"></use>
+            </svg>
+            <h2 class="contact-header">Thank you!</h2>
+            <p class="tymsg-p" id="tymsgp">
+              We have received your contact details and will reach you soon.
+            </p>
+            <div class="contact-send">
+              <button type="button" class="continue-button" data-modal-close>Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- subscribe-modal -->
+
+    <div class="backdrop is-hidden" subscribe-modal>
+      <div class="modal2">
+        <button class="modal-close" subscribe-modal-close>
+          <svg>
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <div>
+          <img
+            class="sub-hero"
+            src="images/modal-newsletter.jpg"
+            srcset="./images/modal-newsletter.jpg 1x, ./images/modal-newsletter_2x.jpg 2x"
+            alt="Beautiful bouquet consisting of carmine roses and tulips."
+          />
+        </div>
+        <h2 class="sub-header">Follow to our newsletter</h2>
+        <p class="sub-p">
+          Be the first to get exclusive offers and the latest news on our product directly in your
+          box.
+        </p>
+        <form id="subscribeForm" name="subscribe-form" autocomplete="on" novalidate>
+          <label class="sub-field-header">Email</label>
+          <span class="sub-field">
+            <input
+              type="email"
+              name="subscribe-email"
+              id="sub-email"
+              class="sub-field-box"
+              placeholder="Your email"
+            />
+          </span>
+          <div class="sub-send">
+            <button
+              type="submit"
+              class="subscribe-button"
+              id="subscribeButton"
+              disabled
+              onclick="submitForm()"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/contact-modal.js"></script>
     <script src="./js/subscribe-modal.js"></script>
