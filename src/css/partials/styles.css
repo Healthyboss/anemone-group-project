@@ -906,6 +906,7 @@ body {
 
 .delivery-image-position {
   margin-top: 26px;
+
   margin-left: -16px;
   margin-right: -16px;
 }
@@ -1386,7 +1387,7 @@ address {
     margin-left: 20px;
   }
   /* ===== HERO MODAL ===== */
-  
+
   .modal {
     max-width: 480px;
   }
@@ -1440,9 +1441,9 @@ address {
     font-size: 18px;
     height: 50px;
   }
-  
+
   /* ===== HERO MODAL END ===== */
-  
+
   .anemone-logo > p {
     width: 658px;
     height: 146px;
@@ -1566,7 +1567,7 @@ address {
   .blog-p-follow {
     margin-top: 24px;
   }
-  
+
   .modal2 {
     max-width: 860px;
     width: 100%;
@@ -1587,9 +1588,9 @@ address {
     flex-direction: column;
     margin: 0 auto;
   }
-  
+
   /* ===== BLOG MODAL END ===== */
-  
+
   .footer {
     padding: 72px 24px;
   }
@@ -1612,7 +1613,7 @@ address {
     fill: #ffffff;
     margin: 0 210px 0 24px;
   }
-  
+
   .hero {
     margin-bottom: 200px;
   }
@@ -1722,6 +1723,8 @@ address {
     font-size: 26px;
   }
   .delivery-image-position {
+    width: 1280px;
+    height: 391px;
     margin-top: 69px;
   }
   .delivery-article {
