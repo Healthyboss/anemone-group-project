@@ -53,42 +53,45 @@ ol {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+  src: url('/src/fonts/Inter-Medium.woff') format('woff'),
+    url('/src/fonts/Inter-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+  src: url('/src/fonts/Inter-Bold.woff') format('woff'),
+    url('/src/fonts/Inter-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  src: url('/src/fonts/Montserrat-Regular.woff') format('woff'),
+    url('/src/fonts/Montserrat-Regular.woff2') format('woff2');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+  src: url('/src/fonts/Montserrat-Medium.woff') format('woff'),
+    url('/src/fonts/Montserrat-Medium.woff2') format('woff2');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+  src: url('/src/fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('/src/fonts/Montserrat-SemiBold.woff2') format('woff2');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+  src: url('/src/fonts/Montserrat-Bold.woff') format('woff'),
+    url('/src/fonts/Montserrat-Bold.woff2') format('woff2');
 }
 
 body {
@@ -98,7 +101,7 @@ body {
 }
 
 .section {
-  margin: 0 16px 60px 16px;
+  margin: 0 0 60px 0;
 }
 
 .link {
@@ -129,7 +132,8 @@ body {
 /* HEADER- Anna - START*/
 
 .header {
-  background: var(--white-background);
+  position: relative;
+  z-index: 10;
 }
 
 .container {
@@ -351,15 +355,17 @@ body {
 /* STORE - Monia KONIEC */
 
 /* HERO - Sylwia START  */
-
+.hero-container {
+  height: 389px;
+  display: flex;
+}
 .hero {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 40px;
 }
 
 .flower-studio {
@@ -405,7 +411,7 @@ body {
   align-items: center;
   z-index: 1;
   position: absolute;
-  top: 90%;
+  top: 315px;
   left: 0%;
   width: 100%;
 }
@@ -901,8 +907,9 @@ body {
 
 .delivery-image-position {
   margin-top: 26px;
-  width: 320px;
-  height: 135px;
+
+  margin-left: -16px;
+  margin-right: -16px;
 }
 
 .delivery-article {
@@ -928,7 +935,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .footer-header {
@@ -1007,17 +1014,154 @@ address {
   margin: 0 0 0 14px;
 }
 
+.animation {
+  position: relative;
+  height: 450px;
+}
+
+.animation-img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 145px;
+  height: 274px;
+  border-radius: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animation-buttons {
+  width: 280px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.anemone-logo > p {
+  position: relative;
+}
+.hero-flower {
+  width: initial;
+  height: initial;
+  max-width: 1280px;
+  max-height: 110%;
+  margin-top: 24px;
+  margin-right: 50px;
+}
+@keyframes changeImgBlur {
+  0% {
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+  }
+
+  25% {
+    border-radius: 100px;
+    width: 542px;
+  }
+
+  75% {
+    border-radius: 100px;
+    width: 542px;
+  }
+
+  100% {
+    border-radius: 226px;
+    width: 390px;
+    height: 636px;
+  }
+}
+
+@keyframes changeImgHover {
+  0% {
+    border-radius: 226px;
+    width: 390px;
+    height: 636px;
+  }
+
+  25% {
+    border-radius: 100px;
+    width: 542px;
+  }
+
+  75% {
+    border-radius: 100px;
+    width: 542px;
+  }
+
+  100% {
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+  }
+}
+
+@keyframes changeButtons {
+  0% {
+    top: 50%;
+    width: 70%;
+  }
+
+  100% {
+    top: 90%;
+    width: 80%;
+  }
+}
+
+@keyframes changeAnemone {
+  0% {
+    top: 75%;
+  }
+
+  100% {
+    top: 35%;
+    color: white;
+  }
+}
+
 /* FOOTER - Michał - END */
 
 /* ===== TABLET ===== */
 
 @media (min-width: 768px) {
+  .animation {
+    width: 100%;
+    position: relative;
+    height: 849px;
+    margin-bottom: 100px;
+  }
+  .animation-img {
+    width: 390px;
+    height: 636px;
+    top: 50%;
+  }
+  .hero-flower {
+    margin-right: initial;
+    margin-top: initial;
+  }
+  .anemone-logo {
+    top: 679px;
+  }
+  .animation-buttons {
+    width: 740px;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+  }
+
   .mobile-menu-layout {
     display: none;
   }
   .container {
     max-width: 768px;
     width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .header-list {
     padding: 16px 0 17px 0;
@@ -1051,10 +1195,10 @@ address {
     margin-left: 70px;
   }
   .header-div {
-    padding: 24px 9px 0 9px;
+    padding: 24px 24px 0 24px;
   }
   .section {
-    margin: 0 24px 100px 24px;
+    margin: 0 0 100px;
   }
   .section-header {
     font-size: 44px;
@@ -1223,19 +1367,13 @@ address {
   .footer-sm-fb {
     margin: 0 0 0 0;
   }
-  .hero {
-    margin-bottom: 150px;
-  }
+
   .flower-studio {
     width: 76px;
     height: 58px;
     font-size: 24px;
     font-weight: 400;
-    margin-right: 49px;
-  }
-  .hero-flower {
-    width: 390px;
-    height: 636px;
+    margin-left: 25px;
   }
   .hero-shop-now-mobile {
     display: none;
@@ -1311,9 +1449,6 @@ address {
     font-weight: 400;
     font-size: 120px;
   }
-  .anemone-logo {
-    top: 91%;
-  }
   .anemone-logo-div {
     display: none;
   }
@@ -1334,9 +1469,7 @@ address {
     font-size: 26px;
   }
   .delivery-image-position {
-    width: 768px;
-    height: 264px;
-    margin-top: 40px;
+    margin: 40px -24px 0;
   }
   .delivery-article {
     font-size: 24px;
@@ -1348,6 +1481,29 @@ address {
 /* ===== DESKTOP ===== */
 
 @media (min-width: 1280px) {
+  .animation-img {
+    animation-name: changeImgBlur;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+  .anemone-logo > p:after {
+    content: '';
+    height: 9px;
+    width: 53px;
+    position: absolute;
+    right: 22px;
+    top: 10px;
+    background-color: var(--black);
+  }
+  .animation-buttons {
+    width: 740px;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -65%);
+  }
   .container {
     width: 100%;
     max-width: 1280px;
@@ -1361,11 +1517,12 @@ address {
     gap: 48px;
   }
   .header-nav {
+    margin: auto;
     height: 57px;
     max-width: 1232px;
   }
   .header-div {
-    padding: 28px 9px 0 9px;
+    padding: 28px 24px 0 24px;
   }
   .flex-about {
     gap: 90px;
@@ -1467,10 +1624,63 @@ address {
     font-weight: 400;
     padding-right: 210px;
   }
-  .hero-flower {
-    width: 390px;
-    height: 636px;
+  .animation:hover .logo svg,
+  .animation:hover .tel-icon svg {
+    fill: var(--white);
+    transition: all;
+    transition-duration: 1000ms;
   }
+  .animation:hover .header-list-nav {
+    color: var(--white);
+  }
+  .animation:hover .animation-img {
+    animation-play-state: running;
+    animation-name: changeImgHover;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+  .animation:hover .animation-buttons {
+    animation-play-state: running;
+    animation-name: changeButtons;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+  .animation:hover .flower-studio {
+    color: white;
+    transition: all;
+    transition-duration: 1000ms;
+  }
+  .animation:hover .hero-svg {
+    fill: white;
+    transition: all;
+    transition-duration: 1000ms;
+  }
+  .animation:hover .anemone-logo {
+    animation-play-state: running;
+    animation-name: changeAnemone;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+  .animation:hover .anemone-logo > p {
+    color: white;
+    transition: all;
+    transition-duration: 750ms;
+  }
+  .animation:hover .anemone-logo > p:after {
+    transition: all;
+    transition-duration: 2000ms;
+    background-color: var(--white);
+  }
+
   .hero-shop-now-tablet {
     display: none;
   }
@@ -1488,7 +1698,7 @@ address {
     font-size: 160px;
   }
   .anemone-logo {
-    top: 85%;
+    top: 80%;
   }
   .anemone-logo-div {
     display: inline;

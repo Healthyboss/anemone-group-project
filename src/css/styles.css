@@ -44,8 +44,7 @@ ol {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('./fonts/Inter-Medium.ttf') format('truetype'),
-    url('./fonts/Inter-Medium.woff') format('woff'),
+  src: url('./fonts/Inter-Medium.woff') format('woff'),
     url('./fonts/Inter-Medium.woff2') format('woff2');
 }
 
@@ -53,40 +52,36 @@ ol {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('./fonts/Inter-Bold.ttf') format('truetype'),
-    url('./fonts/Inter-Bold.woff') format('woff'), url('./fonts/Inter-Bold.woff2') format('woff2');
+  src: url('./fonts/Inter-Bold.woff') format('woff'),
+    url('./fonts/Inter-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/Montserrat-Regular.ttf') format('truetype'),
-    url('./fonts/Montserrat-Regular.woff') format('woff'),
+  src: url('./fonts/Montserrat-Regular.woff') format('woff'),
     url('./fonts/Montserrat-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('./fonts/Montserrat-Medium.ttf') format('truetype'),
-    url('./fonts/Montserrat-Medium.woff') format('woff'),
+  src: url('./fonts/Montserrat-Medium.woff') format('woff'),
     url('./fonts/Montserrat-Medium.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype'),
-    url('./fonts/Montserrat-SemiBold.woff') format('woff'),
+  src: url('./fonts/Montserrat-SemiBold.woff') format('woff'),
     url('./fonts/Montserrat-SemiBold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('./fonts/Montserrat-Bold.ttf') format('truetype'),
-    url('./fonts/Montserrat-Bold.woff') format('woff'),
+  src: url('./fonts/Montserrat-Bold.woff') format('woff'),
     url('./fonts/Montserrat-Bold.woff2') format('woff2');
 }
 
