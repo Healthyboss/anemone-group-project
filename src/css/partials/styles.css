@@ -547,6 +547,24 @@ body {
   line-height: normal;
 }
 
+.contact-field-box-valid {
+  border: solid 1px green;
+}
+.contact-field-box-invalid {
+  border: solid 1px red;
+}
+.contact-field-box-valide {
+  border: solid 1px green;
+}
+.contact-field-box-invalide {
+  border: solid 1px red;
+}
+.contact-field-box-valid2 {
+  border: solid 1px green;
+}
+.contact-field-box-invalid2 {
+  border: solid 1px red;
+}
 .contact-send {
   display: flex;
   justify-content: center;

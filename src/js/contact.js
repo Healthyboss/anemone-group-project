@@ -16,6 +16,20 @@ document.addEventListener('DOMContentLoaded', function () {
   function checkFormValidity() {
     const nameValid = nameInput.value.trim() !== '';
     const emailValid = isValidEmail(emailInput.value.trim());
+    if (!nameValid) {
+      nameInput.classList.remove('contact-field-box-valid');
+      nameInput.classList.add('contact-field-box-invalid');
+    } else {
+      nameInput.classList.remove('contact-field-box-invalid');
+      nameInput.classList.add('contact-field-box-valid');
+    }
+    if (!emailValid) {
+      emailInput.classList.remove('contact-field-box-valid');
+      emailInput.classList.add('contact-field-box-invalid');
+    } else {
+      emailInput.classList.remove('contact-field-box-invalid');
+      emailInput.classList.add('contact-field-box-valid');
+    }
     submitButton.disabled = !(nameValid && emailValid);
   }
 
@@ -25,13 +39,15 @@ document.addEventListener('DOMContentLoaded', function () {
   continueButton.addEventListener('click', function () {
     closeModal();
   });
+
   // Function to close the modal
   function closeModal() {
     const modal = document.querySelector('.backdrop');
 
-  // Hide the modal
+    // Hide the modal
     modal.classList.add('is-hidden');
   }
+
   // function to submit
   contactForm.addEventListener('submit', function (event) {
     // prevent the default form submission behavior
