@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to check the validity of the email for the subscribe form
   function checkFormValiditySubscribe() {
     const emailValid = isValidEmailSubscribe(emailInputSubscribe.value.trim());
+    if (!emailValid) {
+      emailInputSubscribe.classList.remove('contact-field-box-valid2');
+      emailInputSubscribe.classList.add('contact-field-box-invalid2');
+    } else {
+      emailInputSubscribe.classList.remove('contact-field-box-invalid2');
+      emailInputSubscribe.classList.add('contact-field-box-valid2');
+    }
     subscribeButton.disabled = !emailValid;
   }
 
