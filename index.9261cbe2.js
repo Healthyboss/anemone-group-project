@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){const t=document.getElementById("emailsub"),e=document.getElementById("subscribeButton");t.addEventListener("input",(function(){const n=(d=t.value.trim(),/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d));var d;n?(t.classList.remove("contact-field-box-invalid2"),t.classList.add("contact-field-box-valid2")):(t.classList.remove("contact-field-box-valid2"),t.classList.add("contact-field-box-invalid2")),e.disabled=!n})),e.addEventListener("click",(function(){}))}));
+//# sourceMappingURL=index.9261cbe2.js.map
