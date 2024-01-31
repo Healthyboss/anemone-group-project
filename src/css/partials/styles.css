@@ -53,42 +53,45 @@ ol {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+  src: url('/src/fonts/Inter-Medium.woff') format('woff'),
+    url('/src/fonts/Inter-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+  src: url('/src/fonts/Inter-Bold.woff') format('woff'),
+    url('/src/fonts/Inter-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  src: url('/src/fonts/Montserrat-Regular.woff') format('woff'),
+    url('/src/fonts/Montserrat-Regular.woff2') format('woff2');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+  src: url('/src/fonts/Montserrat-Medium.woff') format('woff'),
+    url('/src/fonts/Montserrat-Medium.woff2') format('woff2');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+  src: url('/src/fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('/src/fonts/Montserrat-SemiBold.woff2') format('woff2');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+  src: url('/src/fonts/Montserrat-Bold.woff') format('woff'),
+    url('/src/fonts/Montserrat-Bold.woff2') format('woff2');
 }
 
 body {
@@ -365,7 +368,6 @@ body {
   margin: 0 auto 40px;
 }
 
-
 .flower-studio {
   width: 46px;
   height: 34px;
@@ -379,7 +381,6 @@ body {
   width: 145px;
   height: 274px;
   position: relative;
-  
 }
 
 .hero-shop-now-mobile {
@@ -1039,7 +1040,7 @@ address {
   transform: translate(-50%, -50%);
 }
 
-.anemone-logo>p {
+.anemone-logo > p {
   position: relative;
 }
 .hero-flower {
@@ -1057,7 +1058,6 @@ address {
     height: 100%;
     align-items: start;
   }
-
 
   25% {
     border-radius: 100px;
@@ -1099,7 +1099,6 @@ address {
     height: 100%;
     align-items: start;
   }
-
 }
 
 @keyframes changeButtons {
@@ -1123,7 +1122,6 @@ address {
     top: 35%;
     color: white;
   }
-
 }
 
 /* FOOTER - Michał - END */
@@ -1132,10 +1130,11 @@ address {
 
 @media (min-width: 768px) {
   .animation {
-      position: relative;
-      height: 849px;
-      margin-bottom: 100px;
-    }
+    width: 100%;
+    position: relative;
+    height: 849px;
+    margin-bottom: 100px;
+  }
   .animation-img {
     width: 390px;
     height: 636px;
@@ -1148,12 +1147,12 @@ address {
   .anemone-logo {
     top: 679px;
   }
-    .animation-buttons {
-      width: 740px;
-      left: 50%;
-        top: 52%;
-        transform: translate(-50%, -50%);
-    }
+  .animation-buttons {
+    width: 740px;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+  }
 
   .mobile-menu-layout {
     display: none;
@@ -1490,7 +1489,7 @@ address {
     animation-fill-mode: forwards;
     animation-direction: alternate;
   }
-  .anemone-logo>p:after {
+  .anemone-logo > p:after {
     content: '';
     height: 9px;
     width: 53px;
@@ -1499,12 +1498,12 @@ address {
     top: 10px;
     background-color: var(--black);
   }
-    .animation-buttons {
-      width: 740px;
-      left: 50%;
-      top: 68%;
-      transform: translate(-50%, -65%);
-    }
+  .animation-buttons {
+    width: 740px;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -65%);
+  }
   .container {
     width: 100%;
     max-width: 1280px;
@@ -1518,6 +1517,7 @@ address {
     gap: 48px;
   }
   .header-nav {
+    margin: auto;
     height: 57px;
     max-width: 1232px;
   }
@@ -1625,22 +1625,22 @@ address {
     padding-right: 210px;
   }
   .animation:hover .logo svg,
-  .animation:hover .tel-icon svg{
+  .animation:hover .tel-icon svg {
     fill: var(--white);
     transition: all;
     transition-duration: 1000ms;
   }
   .animation:hover .header-list-nav {
-    color: var(--white); 
+    color: var(--white);
   }
   .animation:hover .animation-img {
     animation-play-state: running;
-      animation-name: changeImgHover;
-      animation-duration: 1000ms;
-      animation-timing-function: linear;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-      animation-direction: normal;
+    animation-name: changeImgHover;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
   }
   .animation:hover .animation-buttons {
     animation-play-state: running;
@@ -1659,7 +1659,7 @@ address {
   .animation:hover .hero-svg {
     fill: white;
     transition: all;
-      transition-duration: 1000ms;
+    transition-duration: 1000ms;
   }
   .animation:hover .anemone-logo {
     animation-play-state: running;
@@ -1669,19 +1669,18 @@ address {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-direction: normal;
-    
   }
   .animation:hover .anemone-logo > p {
     color: white;
     transition: all;
     transition-duration: 750ms;
   }
-  .animation:hover .anemone-logo>p:after {
+  .animation:hover .anemone-logo > p:after {
     transition: all;
     transition-duration: 2000ms;
     background-color: var(--white);
   }
-        
+
   .hero-shop-now-tablet {
     display: none;
   }
